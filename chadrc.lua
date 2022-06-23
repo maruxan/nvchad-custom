@@ -15,10 +15,6 @@ M.plugins = {
     lspconfig = {
       setup_lspconf = "custom.plugins.lspconfig",
     },
-
-    statusline = {
-      separator_style = "arrow",
-    },
   },
 
   override = {
@@ -30,7 +26,11 @@ M.plugins = {
 }
 
 M.ui = {
-  theme = "gruvchad",
+  theme = "gatekeeper",
+
+  statusline = {
+    separator_style = "arrow",
+  },
 }
 
 M.mappings = require "custom.mappings"
