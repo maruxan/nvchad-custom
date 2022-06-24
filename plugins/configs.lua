@@ -2,11 +2,11 @@ local M = {}
 
 M.nvimtree = {
   git = {
-     enable = true,
+    enable = true,
   },
   view = {
-     side = "right",
-     width = 30,
+    side = "right",
+    width = 30,
   },
 }
 
