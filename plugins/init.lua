@@ -1,5 +1,4 @@
 return {
-
   ["windwp/nvim-ts-autotag"] = {
     ft = { "html", "javascriptreact" },
     after = "nvim-treesitter",
@@ -39,4 +38,6 @@ return {
       require("better_escape").setup()
     end,
   },
+
+  ["xiyaowong/nvim-transparent"] = {},
 }

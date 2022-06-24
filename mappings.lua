@@ -51,15 +51,9 @@ M.treesitter = {
   },
 }
 
-M.shade = {
+M.transparent = {
   n = {
-    ["<leader>s"] = {
-      function()
-        require("shade").toggle()
-      end,
-
-      "   toggle shade.nvim",
-    },
+    ["<leader>s"] = { "<cmd> TransparentToggle <CR>", "   toggle transparent background" },
   },
 }
 
