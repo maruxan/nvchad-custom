@@ -26,10 +26,10 @@ M.plugins = {
 }
 
 M.ui = {
-  theme = "gatekeeper",
+  theme = "chadracula",
 
   statusline = {
-    separator_style = "arrow",
+    separator_style = "block",
   },
 }
 
