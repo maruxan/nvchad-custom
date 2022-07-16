@@ -1,5 +1,4 @@
 local M = {}
-local pluginsConfig = require "custom.plugins.configs"
 
 -- make sure you maintain the structure of `core/default_config.lua` here,
 
@@ -18,7 +17,11 @@ M.plugins = {
   },
 
   override = {
-    ["kyazdani42/nvim-tree.lua"] = pluginsConfig.nvimtree,
+    ["NvChad/ui"] = {
+      statusline = {
+          separator_style = 'block',
+      },
+    },
   },
 
   user = require "custom.plugins",
@@ -26,11 +29,9 @@ M.plugins = {
 }
 
 M.ui = {
+
   theme = "chadracula",
 
-  statusline = {
-    separator_style = "block",
-  },
 }
 
 M.mappings = require "custom.mappings"
