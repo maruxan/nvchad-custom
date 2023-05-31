@@ -26,6 +26,8 @@ M.abc = {
       end,
       "hop to char",
     },
+    ["<leader>mp"] = { "<cmd> MarkdownPreview <CR>", "preview markdown file" },
+    ["<leader>mc"] = { "<cmd> MarkdownPreviewStop <CR>", "close markdown preview " },
   },
 
   i = {

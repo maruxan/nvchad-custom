@@ -69,12 +69,19 @@ local plugins = {
   {
     "windwp/nvim-ts-autotag",
     ft = { "html", "javascriptreact" },
-    after = "nvim-treesitter",
+    -- after = "nvim-treesitter",
     config = function()
       local present, autotag = pcall(require, "nvim-ts-autotag")
       if present then
         autotag.setup()
       end
+    end,
+  },
+  {
+    "iamcco/markdown-preview.nvim",
+    ft = "markdown",
+    build = function()
+      vim.fn["mkdp#util#install"]()
     end,
   },
 }
