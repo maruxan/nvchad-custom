@@ -69,7 +69,7 @@ local plugins = {
   {
     "windwp/nvim-ts-autotag",
     ft = { "html", "javascriptreact" },
-    -- after = "nvim-treesitter",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
     config = function()
       local present, autotag = pcall(require, "nvim-ts-autotag")
       if present then
@@ -82,6 +82,9 @@ local plugins = {
     ft = "markdown",
     build = function()
       vim.fn["mkdp#util#install"]()
+    end,
+    init = function()
+      vim.g.mkdp_browser = "C:\\Users\\mauri\\AppData\\Local\\min\\min.exe"
     end,
   },
 }
